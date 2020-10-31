@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Precision</title>
+    <link rel="icon" href="./public/pictures/cursorspeed.png">
+    <link rel="stylesheet" href="./public/css/main.css">
+
+
+</head>
+<body>
+    <div class="container">
+        <h1>Mouse Precision Tester</h1>
+        <div class="mouse-area" 
+        onmousemove="addMove()"
+        onclick="addMiss()">
+            <!-- <span id="point" onclick="deletePoint(event)"></span> -->
+        </div>
+        <p id="text"></p>
+        <p id="reason"></p>
+        <button id="start" onclick="start()">Iniciar Teste</button>
+    </div>
+    <footer>
+        &copy; Luiz Claudio.
+    </footer>
+
+    <script src="./public/scripts/pointer.js"></script>
+    <script src="./public/scripts/main.js"></script>
+</body>
+</html>
