@@ -103,7 +103,7 @@ function Save(pt, time, error){
     if(pt > Number(best)){
         localStorage.setItem("best-pt", pt);
         localStorage.setItem("best-time", time);
-        localStorage.getItem("best-miss", error - maxSpawn + 1);
+        localStorage.setItem("best-miss", error - maxSpawn + 1);
     }
 }
 
